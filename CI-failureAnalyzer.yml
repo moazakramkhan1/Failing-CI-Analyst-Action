@@ -1,0 +1,29 @@
+
+name: 'AI CI/CD Failure Analyst'
+description: 'Automatically captures the logs of a failed job, analyzes them with an AI backend, and sends a summary to Slack.'
+author: 'moazakramkhan1'
+
+
+inputs:
+  github-token:
+    description: 'The GITHUB_TOKEN secret. Required to fetch job logs via the API.'
+    required: true
+  analysis-api-url:
+    description: 'The URL of your deployed analysis API server.'
+    required: true
+  slack-bot-token:
+    description: 'The Slack Bot Token for sending notifications.'
+    required: true
+  slack-channel-id:
+    description: 'The ID of the Slack channel to post the analysis to.'
+    required: true
+
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'zap'
+  color: 'red'
+
