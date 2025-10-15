@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Exit immediately if a command exits with a non-zero status for robustness.
+
 set -e
 
 echo "--- AI Failure Analyst (Automatic & Truncated) ---"
