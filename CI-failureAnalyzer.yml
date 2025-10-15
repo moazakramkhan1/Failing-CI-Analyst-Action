@@ -8,9 +8,6 @@ inputs:
   github-token:
     description: 'The GITHUB_TOKEN secret. Required to fetch job logs via the API.'
     required: true
-  analysis-api-url:
-    description: 'The URL of your deployed analysis API server.'
-    required: true
   slack-bot-token:
     description: 'The Slack Bot Token for sending notifications.'
     required: true

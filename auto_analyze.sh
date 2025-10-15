@@ -7,7 +7,7 @@ echo "--- AI Failure Analyst (Automatic & Truncated) ---"
 
 
 GH_TOKEN="${INPUT_GITHUB-TOKEN}"
-API_URL="${INPUT_ANALYSIS-API-URL}"
+API_URL="https://failing-ci-analyst.onrender.com/"
 SLACK_TOKEN="${INPUT_SLACK-BOT-TOKEN}"
 SLACK_CHANNEL="${INPUT_SLACK-CHANNEL-ID}"
 
